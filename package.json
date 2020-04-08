@@ -1,0 +1,18 @@
+{
+  "name": "node-producer",
+  "version": "1.0.1",
+  "description": "repository for stream server",
+  "scripts": {
+    "start": "node build/bin/server.js",
+    "test": "mocha build/test",
+    "build": "rm -rf build/ && babel src -d build",
+    "eslint": "eslint src/**"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "avro-schema-registry": "^1.5.1",
+    "avsc": "^5.4.18",
+    "node-rdkafka": "^2.7.4"
+  }
+}
